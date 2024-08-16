@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>LeiDell手表应用下载站</title>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <script src="searchlist.js"></script>
+    <link rel="stylesheet" href="homestyle.css">
+    <style>
+        .center-text {
+            text-align: center;
+            width: 50%; 
+            margin: 0 auto;
+        }
+	    
+
+
+    </style>	
+</head>
+<body>
+
+
+
+<div class="menu-container">
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="menu" id="menuList">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="https://leidellstudio.github.io/about">关于LeiDell</a></li>
+        </ul>
+</div>
+
+<script>
+    var menuVisible = false;
+    var menu = document.getElementById("menuList");
+
+    function toggleMenu() {
+        menuVisible = !menuVisible;
+        menu.classList.toggle("active");
+    }
+</script>
+
+
+
+
+
+
+<button-view id="toggleButton" onclick="toggleLayout()">切换至手表/电脑手机视图</button-view>
+
+
+    <div class="t-container">
+    <style>    
+  #rotatable-image {    
+    transition: transform 0.5s ease-in-out; /* 添加过渡效果使旋转更平滑 */    
+    cursor: pointer; /* 当鼠标悬停在图片上时显示手形图标 */    
+  }    
+</style>    
+</head>    
+<body>    
+    
+<img id="rotatable-image" src="logoleidell.png" alt="logo" style="border-radius:50%;width:15%";>  
+    
+<script>    
+  // 获取图片元素    
+  const img = document.getElementById('rotatable-image');    
+  let rotation = 0; // 初始旋转角度    
+  let autoRotationInterval = null; // 自动旋转的定时器  
+  
+  // 添加点击事件监听器    
+  img.addEventListener('click', function() {    
+    // 每次点击增加360度    
+    rotation = (rotation + 360) ;    
+    // 更新图片的CSS transform属性以实现旋转    
+    img.style.transform = `rotate(${rotation}deg)`;    
+  });  
+  
+  // 开始自动旋转  
+  function startAutoRotation() {  
+    autoRotationInterval = setInterval(function() {  
+      rotation = (rotation + 360) ; // 每次增加360度  
+      img.style.transform = `rotate(${rotation}deg)`;  
+    }, 900); // 每900毫秒旋转一次  
+  }  
+  
+  // 停止自动旋转  
+  function stopAutoRotation() {  
+    clearInterval(autoRotationInterval);  
+    autoRotationInterval = null;  
+  }  
+  
+  // 页面加载完成后开始自动旋转  
+  window.onload = startAutoRotation;  
+  
+  // （可选）添加停止自动旋转的功能，比如通过点击另一个按钮  
+  // document.getElementById('stop-button').addEventListener('click', stopAutoRotation);  
+</script>    
+    
+</body>    
+</html>    <h1>LeiDell手表应用下载站</h1>
+        </div>                                                                          
+
+    <div class="container">
+        <div class="app-list">
+        <div class="site-description">
+    <p>这是LeiDellの手表应用下载站  经过@e装机授权   LeiDell权限所有 </p> 原版网址：<a href="https://chiyang001.github.io/APP/">华为儿童手表应用下载站</a>        
+    <div class="center-text">
+	<h1>所有应用</h1>
+    </div>
+	
+
+
+</div>
+
+
+	<div class="app" data-category="娱乐">
+                <div class="dot"></div>
+         	<img src="images/ditiepaoku.png" alt="LeiDell">
+                <h2>地铁跑酷</h2>
+	        <p>已改右滑 v2签名</p>
+		<button
+ onclick="downloadApp('https://www.123pan.com/s/DK5rjv-wdmJh.html')">下载 App</button>
+	</div>	
+
+    <div class="app" data-category="娱乐">
+               <div class="dot"></div>
+               <img src="images/Pianokuai.png" alt="LeiDell">
+           <h2>钢琴块</h2>
+           <p>已改右滑 v2签名</p>
+        <button 
+onclick="downloadApp('https://www.123pan.com/s/DK5rjv-6AmJh.html')">下载 App</button>
+  </div>	
+    
+    <div class="app" data-category="娱乐">
+               <div class="dot"></div>
+               <img src="images/Phira.png" alt="LeiDell">
+           <h2>Phira电脑版</h2>
+           <p>是Phira电脑版! 手表不能用！</p>
+        <button 
+onclick="downloadApp('https://www.123pan.com/s/DK5rjv-cmmJh.html')">下载 Zip压缩包</button>
+  </div>	
+    
+    <div class="app" data-category="音讯">
+               <div class="dot"></div>
+               <img src="images/Douyin.png" alt="LeiDell">
+           <h2>抖音</h2>
+           <p>已改右划 v2签名 不可登录搜索</p>
+        <button
+ onclick="downloadApp('https://www.123pan.com/s/DK5rjv-ZmmJh.html')">下载 App</button>
+  </div>	
+
+ <div class="app" data-category="工具">
+               <div class="dot"></div>
+               <img src="images/jisuanqi.png" alt="LeiDell">
+           <h2>计算器</h2>
+           <p>未改右划 已改v2签名 不是科学计算器 </p>
+        <button
+ onclick="downloadApp('https://www.123pan.com/s/DK5rjv-pBmJh.html')">下载 App</button>
+  </div>	
+
+<div class="app" data-category="工具">
+               <div class="dot"></div>
+               <img src="images/Chorme.png" alt="LeiDell">
+           <h2>Chrome浏览器</h2>
+           <p>未改右划 已改v2签名 最适配手表 </p>
+        <button
+ onclick="downloadApp('https://www.123pan.com/s/DK5rjv-JBmJh.html')">下载 App</button>
+  </div>	
+
+
+     
+
+<footer class="footer">
+    <div class="footer-content">
+	<p>© LeiDell 改版制作 2018-2024.</p>
+        <p>权限归LeiDell所有，炽阳001、e装机、是大大帅aaa 为原版制作者，版权由炽阳001所有</p>
+        <p>本网站属于非盈利性质网站，不进行任何商业经营活动  邮箱：LeiDell@Yeah.net</p>
+          <p>网站版本 0.0.6  2024.6.10更新</p>
+    </div>
+</span>
+<img style="width:20px;height:20px;margin-bottom:-4px" src="https://leidell.xy977.com/image/ico64.png"> <a href="https://icp.gov.moe/?keyword=20241154" target="_blank">萌ICP备20241154号  </a>
+</span>
+<img style="width:20px;height:20px;margin-bottom:-4px" src="https://img2.imgtp.com/2024/05/13/hG8KCYmh.jpg"> <a href="https://icp.kldhsh.top/?id=202438" target="_blank">开朗ICP备案 202438号</a>
+</span>
+<a href="https://leidell.xy977.com/LeiDellAPP-Readme/" target="_blank"> 点击查看更新日志Readme文档</a>
+
+
+</footer>
+    <script src="homescript.js"></script>
+</body>
+</html>
+
